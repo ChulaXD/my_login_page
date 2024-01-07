@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 99;
+}
+.header .code{
+    font-size: 25px;
+    color: #fff;
+    text-decoration: none;
+    margin-right: 150px;
+}
+.header .nav a{
+    position: relative;
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: bold;
+}
+.nav a::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: #fff;
+    border-radius: 5px;
+    bottom: -6px;
+    transform: scale(0);
+    transition: .3s;
+}
+.nav a:hover::after{
+    transform: scaleX(1);
+}
+section{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url(Screenshot_6.png);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    padding: 80px 200px 0;
+    align-items: center;
+}
+section .content{
+    max-width: 600px;
+    color: #fff;
+    margin-right: 30px;
+}
+.content h2{
+    font-size: 40px;
+    letter-spacing: 2px;
+}
+.content p{
+    margin: 10px 0 40px;
+}
+.content a{
+    text-decoration: none;
+    color: #fff;
+    border: 2px solid #fff;
+    font-weight: bold;
+    padding: 10px 40px;
+    border-radius: 40px;
+    transition: .5s;
+}
+.content a:hover{
+    background-color: #ffffff;
+    color: black;
+}
+.login h2{
+    text-align: center;
+    color: #fff;
+    font-size: 30px;
+    font-weight: bold;
+}
+.input-box .input{
+    width: 400px;
+    height: 50px;
+    border: 1px solid #fff;
+    border-radius: 40px;
+    background: transparent;
+    outline: none;
+    margin-top: 20px;
+}
+::placeholder{
+    color: #fff;
+    font-size: 13px;
+    padding: 0 30px;
+}
+.input-box .fa-envelope{
+    position: absolute;
+    top: 305px;
+    right: 230px;
+    color: #fff;
+}
+.input-box .fa-lock{
+    position: absolute;
+    top: 373px;
+    right: 230px;
+    color: #fff;
+}
+.forgot{
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    margin: 25px 0 15px;
+}
+.forgot a{
+    color: #fff;
+    text-decoration: none;
+}
+.forgot a:hover{
+    text-decoration: underline;
+}
+button{
+    width: 100%;
+    height: 45px;
+    border: none;
+    border-radius: 40px;
+    font-weight: bold;
+    font-size: 20px;
+    transition: .3s;
+    background-color: #ffffff8b;
+}
+button:hover{
+    background-color: #fff;
+}
+.register{
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    margin-top: 20px;
+}
+.register a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+.register a:hover{
+    text-decoration: underline;
+}
